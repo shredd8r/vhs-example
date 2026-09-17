@@ -1,6 +1,7 @@
-package com.example.app.file;
+package com.example.app.entity;
 
-import com.example.app.common.BaseEntity;
+import com.example.app.entity.listener.FileEventListener;
+import com.example.app.ui.renderer.FileSizeRenderer;
 import io.vhs.meta.annotation.naming.InstanceName;
 import io.vhs.meta.annotation.ui.GridColumns;
 import io.vhs.meta.annotation.ui.Title;
@@ -13,11 +14,11 @@ import lombok.Setter;
 @Getter
 @Setter
 @Title("Файл")
+@Entity
 @Table(name = "FILES", indexes = {
         @Index(name = "IDX_FILES_USER_CREATED_ID", columnList = "USER_CREATED_ID"),
         @Index(name = "IDX_FILES_USER_MODIFIED_ID", columnList = "USER_MODIFIED_ID")
 })
-@Entity(name = "vhs_File")
 @GridColumns({"name", "mimeType", "size"})
 @EntityListeners(FileEventListener.class)
 public class File extends BaseEntity implements io.vhs.storage.File {

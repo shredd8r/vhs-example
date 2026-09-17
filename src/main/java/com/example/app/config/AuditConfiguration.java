@@ -1,6 +1,6 @@
 package com.example.app.config;
 
-import com.example.app.user.User;
+import com.example.app.entity.User;
 import io.vhs.security.Session;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

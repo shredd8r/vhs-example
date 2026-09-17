@@ -1,22 +1,21 @@
-# VHS Example
+# Example Application
 
-Демонстрационный проект на основе [VHS](https://vhsframework.ru/)
+Демонстрационный проект на основе **_[VHS.framework](https://vhsframework.ru/)_**
 
-## Что включено
+## Навигация
 
 - [Конфигурация Spring Boot](src/main/java/com/example/app/config/ApplicationConfiguration.java)
-- [Подключение базы данных](src/main/resources/application.properties)
-- [Навигационное меню](src/main/java/com/example/app/MainView.java)
+- [Конфигурация приложения](src/main/resources/application.properties)
+- [Навигационное меню](src/main/java/com/example/app/ui/MainView.java)
 - [Аудит изменений](src/main/java/com/example/app/config/AuditConfiguration.java)
-- [Базовая сущность](src/main/java/com/example/app/common/BaseEntity.java)
-  - [Демо сущность](src/main/java/com/example/app/demo/DemoEntity.java)
-  - [Пользователи, роли, аутентификация](src/main/java/com/example/app/user)
-  - [Загрузка, хранение и скачивание файлов](src/main/java/com/example/app/file)
-  - [Кастомные настройки](src/main/java/com/example/app/settings)
+- [Базовая сущность](src/main/java/com/example/app/entity/BaseEntity.java)
+  - [Клиенты](src/main/java/com/example/app/entity/Client.java) / [Заказы](src/main/java/com/example/app/entity/Order.java) / [Продукты](src/main/java/com/example/app/entity/Product.java) 
+  - [Пользователи](src/main/java/com/example/app/entity/User.java) / [Роли](src/main/java/com/example/app/entity/UserRole.java) 
+  - [Файлы](src/main/java/com/example/app/entity/File.java)
 
 ## Запуск
 
-- `Java 17+`
-- `CREATE DATABASE vhs-example`
+- `Java 21+`
+- `CREATE DATABASE example-app`
 - `mvn spring-boot:run`
 - `http://localhost:8080`

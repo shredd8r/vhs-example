@@ -1,4 +1,4 @@
-package com.example.app.user;
+package com.example.app.entity;
 
 import io.vhs.meta.annotation.naming.InstanceName;
 import lombok.Getter;

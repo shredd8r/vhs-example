@@ -15,9 +15,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @StyleSheet(Vhs.STYLESHEET)
 @PageTitle("Демо")
 @SpringBootApplication
-public class VhsApplication implements AppShellConfigurator {
+public class ExampleApplication implements AppShellConfigurator {
 
     static void main(String[] args) {
-        SpringApplication.run(VhsApplication.class, args);
+        SpringApplication.run(ExampleApplication.class, args);
     }
 }

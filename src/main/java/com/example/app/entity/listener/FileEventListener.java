@@ -1,5 +1,6 @@
-package com.example.app.file;
+package com.example.app.entity.listener;
 
+import com.example.app.entity.File;
 import io.vhs.storage.Files;
 import jakarta.persistence.PostRemove;
 import lombok.RequiredArgsConstructor;
@@ -7,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @RequiredArgsConstructor
-class FileEventListener {
+public class FileEventListener {
 
     private final Files files;
 

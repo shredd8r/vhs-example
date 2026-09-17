@@ -1,6 +1,5 @@
-package com.example.app.common;
+package com.example.app.entity;
 
-import com.example.app.user.User;
 import io.vhs.meta.annotation.rule.VisibleWhen;
 import io.vhs.meta.annotation.ui.Title;
 import jakarta.persistence.*;
@@ -28,43 +27,43 @@ public abstract class BaseEntity {
     @Id
     @UuidGenerator
     @Column(updatable = false, nullable = false)
-    @Title("ID")
     @EqualsAndHashCode.Include
     @VisibleWhen("false")
+    @Title("ID")
     private UUID id;
 
     @Column
     @Version
-    @Title("Версия")
     @VisibleWhen("false")
+    @Title("Версия")
     private Integer version;
 
     @CreatedBy
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(updatable = false)
-    @Title("Создано")
     @VisibleWhen("false")
+    @Title("Создано")
     private User userCreated;
 
     @CreatedDate
     @Column(updatable = false, nullable = false)
     @PastOrPresent
-    @Title("Дата создания")
     @VisibleWhen("false")
+    @Title("Дата создания")
     private OffsetDateTime dateCreated;
 
     @LastModifiedBy
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(insertable = false)
-    @Title("Изменено")
     @VisibleWhen("false")
+    @Title("Изменено")
     private User userModified;
 
     @LastModifiedDate
     @Column(insertable = false)
     @PastOrPresent
-    @Title("Дата изменения")
     @VisibleWhen("false")
+    @Title("Дата изменения")
     private OffsetDateTime dateModified;
 
     @Override

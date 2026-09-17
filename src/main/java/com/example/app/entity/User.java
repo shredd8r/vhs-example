@@ -1,7 +1,5 @@
-package com.example.app.user;
+package com.example.app.entity;
 
-import com.example.app.common.BaseEntity;
-import com.example.app.file.File;
 import io.vhs.data.HasAvatar;
 import io.vhs.data.HasZoneId;
 import io.vhs.meta.annotation.naming.InstanceName;
@@ -26,11 +24,12 @@ import java.util.List;
 @Getter
 @Setter
 @Title("Пользователь")
+@Entity
 @Table(name = "USERS", indexes = {
         @Index(name = "IDX_USERS_USER_CREATED_ID", columnList = "USER_CREATED_ID"),
-        @Index(name = "IDX_USERS_USER_MODIFIED_ID", columnList = "USER_MODIFIED_ID")
+        @Index(name = "IDX_USERS_USER_MODIFIED_ID", columnList = "USER_MODIFIED_ID"),
+        @Index(name = "IDX_USERS_AVATAR_ID", columnList = "AVATAR_ID")
 })
-@Entity(name = "vhs_User")
 @GridColumns({"name", "username", "role"})
 public class User extends BaseEntity implements UserDetails, HasZoneId, HasAvatar {
 
@@ -51,16 +50,13 @@ public class User extends BaseEntity implements UserDetails, HasZoneId, HasAvata
     @Title("Пароль")
     private String password;
 
-    @Column
     @Title("Активен")
     @ReadOnlyWhen("\"admin\".equals(username)")
     private boolean enabled = true;
 
-    @Column
     @Title("Часовой пояс")
     private ZoneId zoneId;
 
-    @Column
     @Enumerated(EnumType.STRING)
     @Title("Роль")
     private UserRole role;

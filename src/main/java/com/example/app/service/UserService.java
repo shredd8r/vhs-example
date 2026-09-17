@@ -1,14 +1,18 @@
-package com.example.app.user;
+package com.example.app.service;
 
+import com.example.app.entity.User;
+import com.example.app.entity.UserRole;
 import io.vhs.data.Dao;
 import io.vhs.data.condition.Condition;
-import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.annotation.Primary;
+import org.springframework.context.event.EventListener;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Primary
 @Service
@@ -17,7 +21,8 @@ class UserService implements UserDetailsService {
     @Autowired
     private Dao dao;
 
-    @PostConstruct
+    @Transactional
+    @EventListener(ApplicationReadyEvent.class)
     void init() {
         if (!dao.load(User.class).exists()) {
             createAdminUser();

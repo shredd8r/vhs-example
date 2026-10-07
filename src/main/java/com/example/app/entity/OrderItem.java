@@ -1,10 +1,10 @@
 package com.example.app.entity;
 
 import io.vhs.meta.Metadata;
-import io.vhs.meta.annotation.naming.InstanceName;
-import io.vhs.meta.annotation.rule.VisibleWhen;
-import io.vhs.meta.annotation.ui.GridColumns;
-import io.vhs.meta.annotation.ui.Title;
+import io.vhs.meta.annotation.GridColumns;
+import io.vhs.meta.annotation.InstanceName;
+import io.vhs.meta.annotation.Title;
+import io.vhs.meta.annotation.VisibleWhen;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Positive;
 import lombok.EqualsAndHashCode;

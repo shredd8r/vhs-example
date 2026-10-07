@@ -4,9 +4,9 @@ import com.example.app.entity.Order;
 import com.example.app.entity.OrderStatus;
 import com.vaadin.flow.component.badge.Badge;
 import com.vaadin.flow.component.badge.BadgeVariant;
-import io.vhs.meta.annotation.scope.PrototypeScope;
+import io.vhs.meta.annotation.PrototypeScope;
 import io.vhs.meta.property.EnumProperty;
-import io.vhs.ui.component.renderer.CellRenderer;
+import io.vhs.ui.renderer.CellRenderer;
 import org.springframework.stereotype.Component;
 
 @Component

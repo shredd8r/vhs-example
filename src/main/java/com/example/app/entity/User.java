@@ -2,11 +2,7 @@ package com.example.app.entity;
 
 import io.vhs.data.HasAvatar;
 import io.vhs.data.HasZoneId;
-import io.vhs.meta.annotation.naming.InstanceName;
-import io.vhs.meta.annotation.rule.ReadOnlyWhen;
-import io.vhs.meta.annotation.ui.GridColumns;
-import io.vhs.meta.annotation.ui.Password;
-import io.vhs.meta.annotation.ui.Title;
+import io.vhs.meta.annotation.*;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;

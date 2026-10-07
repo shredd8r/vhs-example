@@ -1,8 +1,8 @@
 package com.example.app.entity;
 
 import com.example.app.ui.renderer.StatusRenderer;
-import io.vhs.meta.annotation.naming.InstanceName;
-import io.vhs.meta.annotation.vaadin.VaadinRenderer;
+import io.vhs.meta.annotation.InstanceName;
+import io.vhs.meta.annotation.VaadinRenderer;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 

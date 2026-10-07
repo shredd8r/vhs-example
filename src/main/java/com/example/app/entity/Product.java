@@ -1,9 +1,9 @@
 package com.example.app.entity;
 
-import io.vhs.meta.annotation.naming.InstanceName;
-import io.vhs.meta.annotation.ui.GridColumns;
-import io.vhs.meta.annotation.ui.HelperText;
-import io.vhs.meta.annotation.ui.Title;
+import io.vhs.meta.annotation.GridColumns;
+import io.vhs.meta.annotation.HelperText;
+import io.vhs.meta.annotation.InstanceName;
+import io.vhs.meta.annotation.Title;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Index;

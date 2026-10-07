@@ -2,10 +2,10 @@ package com.example.app.entity;
 
 import com.example.app.entity.listener.FileEventListener;
 import com.example.app.ui.renderer.FileSizeRenderer;
-import io.vhs.meta.annotation.naming.InstanceName;
-import io.vhs.meta.annotation.ui.GridColumns;
-import io.vhs.meta.annotation.ui.Title;
-import io.vhs.meta.annotation.vaadin.VaadinRenderer;
+import io.vhs.meta.annotation.GridColumns;
+import io.vhs.meta.annotation.InstanceName;
+import io.vhs.meta.annotation.Title;
+import io.vhs.meta.annotation.VaadinRenderer;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Positive;
 import lombok.Getter;

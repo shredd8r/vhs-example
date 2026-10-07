@@ -1,14 +1,7 @@
 package com.example.app.entity;
 
-import io.vhs.meta.annotation.naming.InstanceName;
-import io.vhs.meta.annotation.rule.OnValueChange;
-import io.vhs.meta.annotation.rule.ReadOnlyWhen;
-import io.vhs.meta.annotation.ui.GridColumns;
-import io.vhs.meta.annotation.ui.HelperText;
-import io.vhs.meta.annotation.ui.Placeholder;
-import io.vhs.meta.annotation.ui.Title;
-import io.vhs.meta.annotation.vaadin.VaadinField;
-import io.vhs.ui.component.field.RadioButtonGroupField;
+import io.vhs.meta.annotation.*;
+import io.vhs.ui.field.RadioButtonGroupField;
 import io.vhs.ui.util.DatatypeFormatter;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;

@@ -1,11 +1,6 @@
 package com.example.app.entity;
 
-import io.vhs.meta.annotation.naming.InstanceName;
-import io.vhs.meta.annotation.rule.OnValueChange;
-import io.vhs.meta.annotation.rule.VisibleWhen;
-import io.vhs.meta.annotation.ui.GridColumns;
-import io.vhs.meta.annotation.ui.Mask;
-import io.vhs.meta.annotation.ui.Title;
+import io.vhs.meta.annotation.*;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

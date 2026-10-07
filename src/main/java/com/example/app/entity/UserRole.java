@@ -1,6 +1,6 @@
 package com.example.app.entity;
 
-import io.vhs.meta.annotation.naming.InstanceName;
+import io.vhs.meta.annotation.InstanceName;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 

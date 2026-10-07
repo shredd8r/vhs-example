@@ -1,7 +1,7 @@
 package com.example.app.entity;
 
-import io.vhs.meta.annotation.rule.VisibleWhen;
-import io.vhs.meta.annotation.ui.Title;
+import io.vhs.meta.annotation.Title;
+import io.vhs.meta.annotation.VisibleWhen;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.PastOrPresent;
 import lombok.EqualsAndHashCode;

@@ -37,7 +37,7 @@ import io.vhs.ui.view.VhsLayout;
         view = DataView.class,
         path = "order-items",
         icon = VaadinIcon.LIST,
-        title = "Все покупки",
+        title = "Позиции заказов",
         parameters = @Parameter(clazz = OrderItem.class))
 @MenuItem(
         icon = VaadinIcon.COG,

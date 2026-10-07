@@ -14,6 +14,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
+@Title("Продукт")
 @Entity
 @Table(name = "PRODUCTS", indexes = {
         @Index(name = "IDX_PRODUCTS_USER_CREATED_ID", columnList = "USER_CREATED_ID"),

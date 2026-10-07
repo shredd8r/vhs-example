@@ -16,6 +16,7 @@ import java.util.UUID;
 @Getter
 @Setter
 @Entity
+@Title("Позиция заказа")
 @Table(name = "ORDER_ITEMS")
 @GridColumns({"order", "product", "quantity"})
 public class OrderItem {
